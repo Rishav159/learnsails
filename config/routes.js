@@ -1,6 +1,6 @@
 
 module.exports.routes = {
 
-  "/login" : "PlayerController.login" 
-
+  "GET /login" : "PlayerController.login" ,
+  "GET /profile": "ProfileController.profile"
 };

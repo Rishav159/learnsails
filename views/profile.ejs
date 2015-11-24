@@ -1,0 +1,11 @@
+
+
+<h2>User details</h2>
+<table border="1">
+  <tr>
+    <td>name</td><td><%=profile.name%></td></tr>
+    <tr><td>current_level</td><td><%=profile.current_level%></td></tr>
+    <tr><td>highest_score</td><td><%=profile.highest_score%></td></tr>
+</table><br>
+<button type="button" name="Start Game" onclick="function(){window.location.href='/newgame'}">New Game</button>
+<button type="button" name="Hall of Fame" onclick="function(){window.location.href='/allgame'}">Hall of Fame</button>
