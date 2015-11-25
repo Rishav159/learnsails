@@ -3,8 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>hello world</title>
+    <script src = "js/dependencies/jquery-1.11.3.min.js"></script>
+    <script src = "js/dependencies/angular.min.js"></script>
+    <script src = "js/index.js"></script>
   </head>
-  <body>
+  <body ng-app="exampleAngularApp">
     <h2> Hello zairza</h2>
+    <div class="" ng-controller="exampleController">
+        <ul >
+          <li ng-repeat="i in animals">{{i.species}} is {{i.type}}</li>
+        </ul>
+
+        <h3>List of element in our body</h3>
+        <ol>
+          <li ng-repeat="ele in element">
+            {{ele}}
+          </li>
+        </ol>
+        {{name}}
+        <img ng-src =  {{src}}>
+        <a ng-href={{src}}>goto </a>
+    </div>
+
   </body>
 </html>
