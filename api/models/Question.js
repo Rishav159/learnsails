@@ -8,25 +8,25 @@
 module.exports = {
 
   attributes: {
-    question : {
+    "question" : {
       type : "string"
     },
-    answer : {
+    "answer" : {
       type : "string"
     },
-    choice1 : {
+    "choice1" : {
       type : "string"
     },
-    choice2 : {
+    "choice2" : {
       type : "string"
     },
-    choice3 : {
+    "choice3" : {
       type : "string"
     },
-    choice4 : {
+    "choice4" : {
       type : "string"
     },
-    complexity : {
+    "complexity" : {
       type : "integer"
     }
   }
