@@ -3,13 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>login</title>
+    <script src = "/js/dependencies/jquery-1.11.3.min.js"></script>
+    <script src = "/js/dependencies/angular.min.js"></script>
+    <script src = "index.js"></script>
   </head>
-  <body>
-    <h2>provide us with your details :D</h2>
-    <form  action="/login" method="post">
-      <input type="text" name="username">
-      <input type="password" name="password">
-      <input type="submit">
-    </form>
+  <body ng-app="demon">
+    <div ng-controller = "loginController">
+      {{message}}
+      <form>
+        <input type="text" name="username" id='user'>
+        <input type="password" name="password" id='pass'>
+        <input type="submit" ng-click='submit()'>
+      </form>
+    </div>
   </body>
 </html>

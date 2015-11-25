@@ -18,6 +18,7 @@ module.exports = {
 				if (data) {
 					bcrypt.compare(pwd, data.password, function(err, match) {
 						if (match) {
+							req.session.user = uid;
 							res.send({found:true,check:true});
 						}else{
 							res.send({found:true,check:false});
@@ -29,5 +30,18 @@ module.exports = {
 				}
 			}
 		})
+	},
+	getUser : function(req,res){
+		if(req.session.user){
+			Player.findOne({name : req.session.user}).exec(function(err,data){
+				if(err)
+					throw err;
+				else{
+					res.send(JSON.stringify(data));
+				}
+			});
+		}else{
+			res.send({});
+		}
 	}
 };

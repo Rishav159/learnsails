@@ -1,0 +1,9 @@
+<h1><%=object.question%></h1>
+<form action="/game" method="post">
+  <br><input type="radio" name="choice" value="<%=object.choice1%>"><%=object.choice1%>
+  <br><input type="radio" name="choice" value="<%=object.choice2%>"><%=object.choice2%>
+  <br><input type="radio" name="choice" value="<%=object.choice3%>"><%=object.choice3%>
+  <br><input type="radio" name="choice" value="<%=object.choice4%>"><%=object.choice4%>
+  <input type='text' name="id" value="<%=object.id%>" hidden=true>
+  <br><br><input type="submit">
+</form>
